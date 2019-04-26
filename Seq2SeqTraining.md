@@ -6,6 +6,10 @@
 
 `git clone https://github.com/adrianpearl/DSGA1012-Automated-Lyric-Annotation.git`
 
+Also run the following so that the OpenNMT-py repo is actually cloned (submodules by default are not cloned):
+
+`git submodule update --init`
+
 ## 3. Transfer data
 
 Run locally wherever data is currently:
@@ -16,7 +20,7 @@ Run locally wherever data is currently:
 
 Change python commands as needed
 
-## 5. Create virtual environment and put the repo + data inside it (instructions in powerpoint)
+## 5. Create virtual environment (instructions in powerpoint)
 
 `source ~pyenv/py3.6.3/bin/activate`
 
@@ -26,10 +30,6 @@ Change python commands as needed
 
 ## 7. Launch job
 `sbatch BaselineTraining.sh`
-
-Slurm job currently fails with this error:
-
-`THCudaCheck FAIL file=/pytorch/torch/csrc/cuda/Module.cpp line=34 error=35 : CUDA driver version is insufficient for CUDA runtime version`
 
 ## 8. As an alternative to the slurm job, start interactive GPU environment with:
 
