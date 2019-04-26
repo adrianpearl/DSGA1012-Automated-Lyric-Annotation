@@ -18,6 +18,8 @@ Change python commands as needed
 
 ## 5. Create virtual environment and put the repo + data inside it (instructions in powerpoint)
 
+`source ~pyenv/py3.6.3/bin/activate`
+
 ## 6. With the virtualenv activated, `cd` into the `OpenNMT-py` directory and run:
 
 `pip install -r requirements.txt`
