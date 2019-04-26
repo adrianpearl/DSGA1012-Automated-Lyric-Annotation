@@ -20,18 +20,19 @@ Run locally wherever data is currently:
 
 Change python commands as needed
 
-**5. Create virtual environment (instructions in powerpoint)
+**5. Create virtual environment (instructions in powerpoint)**
 
 `source ~pyenv/py3.6.3/bin/activate`
 
-**6. With the virtualenv activated, `cd` into the `OpenNMT-py` directory and run:
+**6. With the virtualenv activated, `cd` into the `OpenNMT-py` directory and run:**
 
 `pip install -r requirements.txt`
 
-**7. Launch job
+**7. Launch job**
+
 `sbatch BaselineTraining.sh`
 
-**8. As an alternative to the slurm job, start interactive GPU environment with:
+**8. As an alternative to the slurm job, start interactive GPU environment with:**
 
 `srun --gres=gpu:1 --pty /bin/bash`
 
