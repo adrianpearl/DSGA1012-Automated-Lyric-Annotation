@@ -40,7 +40,7 @@ python OpenNMT-py/preprocess.py -train_src ...
 
 ---> **To check status of job:**
 -----> squeue -u <NETID>	// this will tell you if it's running
------> cat slurm-<JOBID>	// this tells you what step it's on
+-----> cat slurm-<JOBID>.out	// this tells you what step it's on
 
 **9. Run the test command in OpenNMT-Commands.md**
 
