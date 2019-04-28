@@ -7,7 +7,7 @@
 
 python OpenNMT-py/train.py -save_model demo_model \
     -data ../data/CNNDM \
-    -train_steps 1500 \
+    -train_steps 24000 \
     -global_attention mlp \
     -word_vec_size 128 \
     -rnn_size 512 \
