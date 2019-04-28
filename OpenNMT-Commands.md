@@ -1,15 +1,15 @@
-python OpenNMT-py/preprocess.py -train_src ../data_200/src-train.txt \
-                     -train_tgt ../data_200/tgt-train.txt \
-                     -valid_src ../data_200/src-val.txt \
-                     -valid_tgt ../data_200/tgt-val.txt \
-                     -save_data ../data_200/CNNDM \
+python OpenNMT-py/preprocess.py -train_src ../data/src-train.txt \
+                     -train_tgt ../data/tgt-train.txt \
+                     -valid_src ../data/src-val.txt \
+                     -valid_tgt ../data/tgt-val.txt \
+                     -save_data ../data/CNNDM \
                      -src_seq_length 10000 \
                      -tgt_seq_length 10000 \
                      -src_seq_length_trunc 400 \
                      -tgt_seq_length_trunc 100 \
                      -dynamic_dict \
                      -share_vocab \
-                     -shard_size 105000
+                     -shard_size 125000
 
 python OpenNMT-py/translate.py -gpu 0 \
                     -batch_size 20 \

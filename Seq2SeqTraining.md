@@ -2,7 +2,7 @@
 
 `ssh NETID@prince.hpc.nyu.edu`
 
-**2. Clone repo**
+**2. Clone repo [DO ONCE] **
 
 `git clone https://github.com/adrianpearl/DSGA1012-Automated-Lyric-Annotation.git`
 
@@ -22,15 +22,15 @@ Change python commands as needed
 
 **5. Create virtual environment (instructions in powerpoint)**
 
-`source ~pyenv/py3.6.3/bin/activate`
+`source pyenv/py3.6.3/bin/activate`
 
-**6. With the virtualenv activated, `cd` into the `OpenNMT-py` directory and run:**
+**6. With the virtualenv activated, `cd` into the `OpenNMT-py` directory and run: [ONLY ONCE]**
 
 `pip install -r requirements.txt`
 
 **7. Launch job**
 
-`sbatch BaselineTraining.sh`
+`sbatch BaselineTrain.sh`
 
 **8. As an alternative to the slurm job, start interactive GPU environment with:**
 
