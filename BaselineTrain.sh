@@ -1,7 +1,8 @@
 #!/bin/sh
-#SBATCH -n 2
+#SBATCH -n 1
 #SBATCH --tasks-per-node=1
 #SBATCH --time=48:00:00
+#SBATCH --gres=cpu:2
 #SBATCH --gres=gpu:2
 #SBATCH --mem=8GB
 
