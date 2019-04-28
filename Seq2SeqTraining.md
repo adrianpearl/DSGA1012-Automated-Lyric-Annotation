@@ -28,11 +28,27 @@ Change python commands as needed
 
 `pip install -r requirements.txt`
 
-**7. Launch job**
+**7. Run the pre-processing command in OpenNMT-Commands.md**
+
+python OpenNMT-py/preprocess.py -train_src ...
+...
+...
+
+**8. Launch job**
 
 `sbatch BaselineTrain.sh`
 
-**8. As an alternative to the slurm job, start interactive GPU environment with:**
+---> **To check status of job:**
+-----> squeue -u <NETID>	// this will tell you if it's running
+-----> cat slurm-<JOBID>	// this tells you what step it's on
+
+**9. Run the test command in OpenNMT-Commands.md**
+
+python OpenNMT-py/translate.py ...
+...
+...
+
+**(10). As an alternative to the slurm job, start interactive GPU environment with:**
 
 `srun --gres=gpu:1 --pty /bin/bash`
 
