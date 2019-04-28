@@ -4,7 +4,7 @@
 #SBATCH --time=48:00:00
 #SBATCH --cpus-per-task=2
 #SBATCH --gres=gpu:2
-#SBATCH --mem=8GB
+#SBATCH --mem=16GB
 
 python OpenNMT-py/train.py -save_model demo_model \
     -data ../data/CNNDM \
