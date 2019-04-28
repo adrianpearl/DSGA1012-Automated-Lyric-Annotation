@@ -17,7 +17,7 @@ python OpenNMT-py/train.py -save_model demo_model \
     -valid_batch_size 64 \
     -optim adagrad \
     -max_grad_norm 2 \
-    -dropout 0. \
+    -dropout 0.2 \
     -learning_rate 0.02 \
     -gpu_ranks 0 1
 
