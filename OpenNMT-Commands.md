@@ -11,12 +11,13 @@ python OpenNMT-py/preprocess.py -train_src ../data/src-train.txt \
                      -share_vocab \
                      -shard_size 125000
 
+change the name of "-output" below
 python OpenNMT-py/translate.py -gpu 0 \
                     -batch_size 20 \
                     -beam_size 10 \
-                    -model models/model_200_step_15000.pt \
-                    -src ../data_200/src-train.txt \
-                    -output model_200_train_predictions \
+                    -model demo_model_step_24000.pt \
+                    -src ../data/src-train.txt \
+                    -output model_CI_predictions \
                     -min_length 35 \
                     -verbose \
                     -stepwise_penalty \

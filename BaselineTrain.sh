@@ -1,9 +1,9 @@
 #!/bin/sh
-#SBATCH -n 2
+#SBATCH -n 1
 #SBATCH --tasks-per-node=1
 #SBATCH --time=48:00:00
-#SBATCH --cpus-per-task=2
-#SBATCH --gres=gpu:2
+#SBATCH --cpus-per-task=1
+#SBATCH --gres=gpu:p40:1
 #SBATCH --mem=32GB
 
 python OpenNMT-py/train.py -save_model demo_model \
