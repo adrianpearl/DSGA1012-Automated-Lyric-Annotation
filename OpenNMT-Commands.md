@@ -16,8 +16,8 @@ python OpenNMT-py/translate.py -gpu 0 \
                     -batch_size 20 \
                     -beam_size 10 \
                     -model demo_model_step_40000.pt \
-                    -src ../data/src-train.txt \
-                    -output model_CI_predictions \
+                    -src ../data/src-val.txt \
+                    -output model_CI_predictions_2layer \
                     -min_length 35 \
                     -verbose \
                     -stepwise_penalty \
