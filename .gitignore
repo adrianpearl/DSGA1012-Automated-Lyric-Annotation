@@ -4,3 +4,5 @@
 *.tsv
 .DS_Store
 **/old
+data_full/
+**/data_small/
