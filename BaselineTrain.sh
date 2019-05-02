@@ -7,7 +7,7 @@
 #SBATCH --mem=32GB
 
 python OpenNMT-py/train.py -save_model demo_model \
-    -data ../data/CNNDM \
+    -data ../data_noquotes/CNNDM \
     -train_steps 40000 \
     -global_attention mlp \
     -word_vec_size 256 \
