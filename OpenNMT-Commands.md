@@ -6,7 +6,6 @@ python OpenNMT-py/preprocess.py --train_src data_full/split/src_tok/src-train.tx
                      --shard_size 100000 \
                      --src_vocab data_full/split/src_tok/src-vocab.txt \
                      --tgt_vocab data_full/split/tgt-vocab.txt
-                     
 
 
 change the name of "-output" below
