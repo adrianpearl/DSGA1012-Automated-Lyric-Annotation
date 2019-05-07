@@ -4,11 +4,11 @@
 #SBATCH --time=48:00:00
 #SBATCH --cpus-per-task=1
 #SBATCH --gres=gpu:p40:1
-#SBATCH --mem=32GB
+#SBATCH --mem=64GB
 
-python OpenNMT-py/train.py -save_model demo_model \
-    -data ../data_noquotes/CNNDM \
-    -train_steps 40000 \
+python OpenNMT-py/train.py -save_model model_full \
+    -data ../data/CNNDM \
+    -train_steps 160000 \
     -global_attention mlp \
     -word_vec_size 256 \
     -rnn_size 1024 \
