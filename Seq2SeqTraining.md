@@ -2,7 +2,7 @@
 
 `ssh NETID@prince.hpc.nyu.edu`
 
-**2. Clone repo [DO ONCE] **
+**2. Clone repo [DO ONCE]**
 
 `git clone https://github.com/adrianpearl/DSGA1012-Automated-Lyric-Annotation.git`
 
