@@ -1,3 +1,13 @@
+# Seq2Seq Preprocessing
+python OpenNMT-py/preprocess.py --train_src ../data/src-train.txt \
+                     --train_tgt ../data/tgt-train.txt \
+                     --valid_src ../data/src-val.txt \
+                     --valid_tgt ../data/tgt-val.txt \
+                     --save_data ../data/CNNDM \
+                     --shard_size 50000 \
+                     --share_vocab
+
+# BERT Preprocessing
 python OpenNMT-py/preprocess.py --train_src data_full/split/src_tok/src-train.txt \
                      --train_tgt data_full/split/tgt-train.txt \
                      --valid_src data_full/split/src_tok/src-val.txt \
