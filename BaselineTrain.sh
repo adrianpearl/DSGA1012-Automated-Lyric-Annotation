@@ -14,8 +14,8 @@ python OpenNMT-py/train.py -save_model model_full \
     -rnn_size 1024 \
     -layers 2 \
     -encoder_type brnn \
-    -batch_size 64 \
-    -valid_batch_size 64 \
+    -batch_size 32 \
+    -valid_batch_size 32 \
     -optim adagrad \
     -max_grad_norm 2 \
     -dropout 0.2 \
