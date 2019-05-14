@@ -20,8 +20,7 @@ python OpenNMT-py/train.py -save_model model_full \
     -max_grad_norm 2 \
     -dropout 0.2 \
     -learning_rate 0.02 \
-    -gpu_ranks 0 1 \
-    -train_from model_full_step_55000.pt
+    -gpu_ranks 0 1
 
 
 
